@@ -5,7 +5,7 @@ let altura = 1.83;
 
 if (viva){
     let saudacao = "ola, " + nome +"!";
-    let msg = 'altura: ${altura}m | idade: ${2026 - nasc}';
+    let msg = `altura: ${altura}m | idade: ${2026 - nasc}`;
     alert(saudacao+"\n"+msg);
 }
 else{
