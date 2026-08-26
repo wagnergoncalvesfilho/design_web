@@ -1,18 +1,24 @@
 var nasc = 2009;
-let nome = "pedrina";
+let nome = "Wagner";
 const viva = true;
 
 function calcIdade(ano = 2026){
     let idade = ano -nasc;
+    let menor;
     if (idade < 18){
-        alert(`${nome} é menor de idade`);
+        menor = true;
+        var podebeber = false
     }
+    else{
+        menor = false;
+        var podebeber = true
+    }
+    alert(`${nome} é menor de idade? ${menor}\n idade: ${idade}\nPode beber: ${podebeber}`);
     return idade;
 }
 
 calcIdade();
-/* 
-alert(`fora da funcao: Idade: ${idade}`);
-erro, pois a variavel let nao existe fora do escoppo dele
+/*
+var vaza a variavel dentro do escopo da mesma funcao
+alert(`Pode beber: ${podebeber}`);
 */
-alert(`fora da funcao: chamando calcIdade ${calcIdade()}`);
