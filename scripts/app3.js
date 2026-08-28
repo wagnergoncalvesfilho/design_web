@@ -1,15 +1,12 @@
-let nasc = 2009;
-let nome ="wagner";
-let viva =true;
-let altura = 1.83
-let sexo;
-let peso = null;
-let imc = "peso"*10;
-
-alert(`Ano de nascimento - tipo ${typeof(nasc)}`);
-alert(`nome- tipo: ${typeof(nome)}`);
-alert(`viva - tipo: ${typeof(viva)}`);
-alert(`altura - tipo: ${typeof(altura)}`);
-alert(`sexo - tipo: ${typeof(sexo)}`);
-alert(`peso - tipo: ${typeof(peso)}`);
-alert(`imc - tipo: ${typeof (imc)}`);
+let n1 = prompt("digite um numero: ")
+n1 = Number(n1)
+let n2 = prompt("digite outro numero: ")
+n2 = Number(n2)
+alert(`${n1} == ${n2} : ${n1 == n2}`);
+alert(`${n1} === ${n2} : ${n1 === n2}`);
+alert(`${n1} < ${n2} : ${n1 < n2}`);
+alert(`${n1} > ${n2} : ${n1 > n2}`);
+alert(`${n1} <= ${n2} : ${n1 <= n2}`);
+alert(`${n1} >= ${n2} : ${n1 >= n2}`);
+alert(`${n1} != ${n2} : ${n1 != n2}`);
+alert(`${n1} !== ${n2} : ${n1 !== n2}`);
