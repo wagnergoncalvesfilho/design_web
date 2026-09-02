@@ -1,4 +1,5 @@
 let dia = prompt("escolha um dia da semana \n sendo 1:domingo - 7: sabado")
+dia = Number(dia)
 if (dia <=0 || dia >= 8){
     alert('dia invalido')
 }
