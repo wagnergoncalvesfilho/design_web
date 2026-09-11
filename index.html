@@ -1,12 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>aula 00: apresentacao</title>
+    <title>atividade 8: interacao JS e HTMl</title>
 </head>
+
 <body>
-    <h1>ola, meu nome é wagner goncalves</h1>
-    <h2>esta é minha primeira apresentacao.</h2>
+    <h3>Data: 11/09/2026</h3>
+
+    <table border="1">
+        <script src = "./js/app1.js" defer></script>
+        <tr>
+            <td>
+                <button id="ant">Anterior</button>
+                <button id="prox">Proximo</button>
+            </td>
+            <td rowspan="4">
+                <img id="foto" src="./img/foto1.jpg" width="350px">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <select name="" id="combobox">
+                    <option value="1">mel</option>
+                    <option value="2">balu</option>
+                    <option value="3">zoey</option>
+                    <option value="4">aia </option>
+                    <option value="5">pitomba</option>
+                    <option value="6">bombom</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li id="p1">mel</li>
+                    <li id="p2">balu</li>
+                    <li id="p3">zoey</li>
+                    <li id="p4">aia</li>
+                    <li id="p5">pitomba</li>
+                    <li id="p6">bombom</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="range" id="opacidade" min='0' max="1">
+            </td>
+        </tr>
+    </table>
 </body>
+
 </html>
