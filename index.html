@@ -1,12 +1,46 @@
+
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>aula 00: apresentacao</title>
+    <title>Aula 09: Agenda de Contatos</title>
 </head>
 <body>
-    <h1>ola, meu nome é wagner goncalves</h1>
-    <h2>esta é minha primeira apresentacao.</h2>
+    <h1>Meus Amigos</h1>
+    <hr/>
+    <form action="#" id="cadastro" method="post">
+        <table>
+            <tr>
+                <td>Nome</td>
+                <td>
+                    <input type="text" required name="nome" minlength="3"/>
+                </td>
+            </tr>
+            <tr>
+                <td>Data de Nascimento</td>
+                <td>
+                    <input type="date" name="nasc"/>
+                </td>
+            </tr>
+            <tr>
+                <td>WhatsApp</td>
+                <td>
+                    <input type="tel" name="whatsapp"/>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Adicionar">
+                    <input type="reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <hr/>
+    <ul id="lista">
+        <li>Lista Vazia</li>
+    </ul>
+    <script src="./js/app2.js" defer></script>
 </body>
 </html>
