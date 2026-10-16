@@ -27,7 +27,7 @@ class Animal{
 }
 
 class Cachorro extends Animal{
-    cosntructor(nome, cor = "desconhecida", altura = 0, peso = 0, raca = "vira lata"){
+    constructor(nome, cor = "desconhecida", altura = 0, peso = 0, raca = "vira lata"){
         super(nome, cor, altura, peso, raca);
         this.patas = 4;
     }
@@ -38,6 +38,7 @@ class Cachorro extends Animal{
     saudar(){
         let msg = super.saudar();
         msg += "sou um cachorro \n";
+        alert(msg);
     }
 }
 
@@ -56,4 +57,4 @@ class Passaro extends Animal{
 }
 const balu = new Animal('balu');
 const thor = new Cachorro("thor", "amarelo claro", 0.6, 4, "pudom");
-const leleco = new Passaro("leleco brasil", "verde", raca = "papagaio");
+const leleco = new Passaro("leleco brasil", "verde", 0.4, 0.8, "papagaio");
