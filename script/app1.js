@@ -11,8 +11,21 @@ const tags = document.getElementById("tags");
 
 formulario.addEventListener("submit", function(e){
     e.preventDefault();
-    let frase = texto.value;
-    frase = frase.sp
-    tags.innerHTML = frase;
-    formulario.resert();
+    let t = texto.value;
+    t = t.split(" ");
+
+    for (let i = 0; i < t.length; i ++){
+        let palavra = t[i];
+        palavra = palavra.toUpperCase();
+        if (palavra.startsWith("#")){
+            lista.push(palavra);
+        }
+        else if(palavra.includes("#")){
+            let pos = palavra.indexOf("#");
+            palavra = palavra.slice(pos, palavra.length);
+            lista.push(palavra)
+        }
+    }
+    tags.innerHTML = lista;
+    formulario.reset();
 })
