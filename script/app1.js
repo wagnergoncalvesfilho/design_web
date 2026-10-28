@@ -1,6 +1,6 @@
 // saida
 const topo = document.getElementById("topo");
-
+const enfase = document.getElementById("enfase");
 
 //evento
 window.addEventListener('scroll', function(e){
@@ -11,3 +11,10 @@ window.addEventListener('scroll', function(e){
         topo.classList.remove('solido');
     }
 })
+
+function destacar(){
+    enfase.classList.add("destaque");
+}
+function cancelar(){
+    enfase.classList.remove("destaque");
+}
