@@ -4,19 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>aula 12: </title>
+    <link rel="stylesheet" href="estilo.css">
+    <title>aula 13: JS OO</title>
 </head>
 
 <body>
-    <h3> Dia: 21/10/2026 </h3>
-    <form method="post" action="#" id="cadastro">
-        <input type="text" name = "nome" id="nome" required placeholder="digite o nome da pessoa">
-        <input type="date" name="nasc" id="nasc" required>
-        <input type="submit">
-    </form>
-    <p id="saudacao"></p>
-    <p id="aniversario"></p>
-
+    <div class="container">
+        <h2>lista de tarefas</h2>
+        <form id="cadastro">
+            <input type="text" id="tarefa" name="tarefa" required placeholder="digite uma tarefa">
+            <button type="submit">Salvar</button>
+        </form>
+        <ul id="lista"></ul>
+    </div>
     <script src="./script/app1.js"></script>
 </body>
 

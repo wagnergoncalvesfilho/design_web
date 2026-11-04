@@ -1,0 +1,30 @@
+.cocontainer {
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+input, button {
+    display: inline-block;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    padding: 5px;
+}
+ul{
+    padding: 0px;
+}
+li{
+    list-style: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: lightblue;
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    background: blue;
+    color: white;
+}
+#lista button{
+    background-color: red;
+
+}
