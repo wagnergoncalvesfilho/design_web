@@ -10,16 +10,13 @@ cadastro.addEventListener('submit', function(e){
 
     const item = document.createElement("li");
     item.textContent = tarefa.value;
-
     const remover = document.createElement("button");
     remover.textContent = "remover";
-
     remover.addEventListener("click", function(v){
         v.preventDefault();
         item.remove();
     })
     lista.append(" ",remover);
     lista.append(item);
-
     cadastro.reset();
 })
