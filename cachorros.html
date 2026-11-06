@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adote um Amigo | Cachorros disponíveis</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html"><span class="brand-mark">🐾</span><span>Adote um<br>Amigo</span></a>
+    <nav class="nav-links" aria-label="Navegação principal">
+      <a class="" href="index.html">Início</a>
+      <a class="active" href="cachorros.html">Cachorros</a>
+      <a href="index.html#sobre">Sobre</a>
+      <a class="help-link" href="cachorros.html">Quero ajudar ♥</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="page-heading">
+    <h1>🐾 Cachorros disponíveis para adoção</h1>
+    <p>Conheça nossos amigos e encontre seu novo companheiro.</p>
+  </section>
+  <form id= 'busca'class="filters" action="#" method="get">
+    <input type="search" name="nome" placeholder="⌕  Buscar por nome..." aria-label="Buscar por nome">
+    <select name="porte" aria-label="Filtrar por porte">
+      <option value="">Todos os portes</option><option>Pequeno porte</option><option>Médio porte</option><option>Grande porte</option>
+    </select>
+    <select name="perfil" aria-label="Filtrar por personalidade">
+      <option value="">Todos os perfis</option><option>Dócil</option><option>Brincalhão</option><option>Calmo</option>
+    </select>
+    <button class="btn btn-yellow" type="submit">Buscar</button>
+  </form>
+  <section class="dog-grid four" id="dog-list"></section>
+  <section class="section">
+    <h2 class="section-title">♥ Meus favoritos</h2>
+    <p id="empty-favorites" style="text-align:center;color:#75685d">Você ainda não adicionou cachorros aos favoritos.</p>
+    <div class="dog-grid four" id="favorite-list"></div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">🐾 Adote um Amigo — Todo cachorro merece um lar cheio de carinho.</div>
+</footer>
+
+  <script src="app.js"></script>
+  <script>
+    window.addEventListener("load", function(e){
+        exibirLista(null, null);
+    })
+  </script>
+</body>
+</html>
